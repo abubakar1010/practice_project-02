@@ -125,6 +125,71 @@ nav ul li a {
 
 /* finished sponsor section */
 
+/* finished header section */
+
+/* here is main section */
+
+/* here is card section */
+
+.card-section-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  max-width: 1065px;
+  margin: 45px auto;
+}
+.card-section-title{
+  color: var(--primary-text-color);
+font-size: 1.8rem;
+font-weight: 600;
+line-height: 70px; 
+text-align: center;
+}
+
+.card{
+  border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  padding: 14px 17px;
+}
+
+.card-title{
+  color: var(--secondary-text-color-gray);
+font-size: 1.8rem;
+font-weight: 500;
+line-height: 40px; 
+}
+
+.card-price{
+  color:  var(--dark-color1);
+font-size: 1.5rem;
+font-weight: 400;
+line-height: 150%;
+padding-bottom: 8px; 
+}
+
+.card-description{
+  color: var(--secondary-text-color-gray);
+font-size: 14px;
+font-weight: 700;
+line-height: 143%; 
+letter-spacing: 0.252px;
+padding-bottom: 15px;
+}
+
+.card-rating{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.card-image img{
+  width: 15px;
+}
 
 /* responsive media query for small devices */
 
@@ -194,5 +259,10 @@ nav ul li a {
   
 
   /* here is main section */
+
+  .card-section-container{
+    grid-template-columns: 1fr;
+      margin: 14px 75px;
+  }
 
 }
