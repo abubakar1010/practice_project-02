@@ -1,6 +1,173 @@
 /* here us universal section */
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--primary-white-color);
+}
+
+/* here is css variable */
+
+:root {
+  --primary-text-color: rgba(58, 58, 58, 1);
+  --secondary-text-color-gray: rgba(24, 25, 31, 1);
+  --dark-color1: rgba(0, 0, 0, 0.87);
+  --primary-button-color: rgba(224, 44, 109, 1);
+  --primary-white-color: rgba(255, 255, 255, 1);
+  --secondary-white-color: rgba(217, 219, 225, 1);
+  --description-text-color: rgba(120, 120, 133, 1);
+}
+
+/* here is common shared styles */
+
+/* here is header section */
+
+header {
+  max-width: 1350px;
+  margin: 50px auto 0;
+  background-image: url("../assets/images/Circle\ design.svg");
+}
+
+/* here is navigation section */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-section-title {
+  color: var(--primary-text-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+  gap: 45px;
+}
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-weight: 600;
+}
+
+/* finished nav section */
+
+/* here is banner section */
+
+.banner-container {
+  display: flex;
+  gap: 200px;
+}
+.banner-container > div {
+  width: 50%;
+}
+/* here is banner section description */
+
+.banner-description-container {
+  margin: 140px 0;
+}
+
+.banner-title {
+  color: var(--primary-text-color);
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 4.375rem;
+  margin-bottom: 20px;
+}
+
+.banner-description {
+  color: var(--primary-text-color);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.primary-button {
+  border-radius: 41px;
+  background: var(--primary-button-color);
+  color: var(--primary-white-color);
+  padding: 10px 24px;
+  border: 0;
+}
+
+/* here is banner image container */
+
+.banner-image-container {
+  margin-top: 50px;
+  background-image: url(../assets/images/Circle\ design-svg.png);
+  background-repeat: no-repeat;
+}
+
+.banner-image-container img {
+  width: 400px;
+  background: none;
+  position: relative;
+  top: 61px;
+  left: 40px;
+}
+
+/* finished banner image container */
+
+/* finished banner section */
+
+
+/* responsive media query for small devices */
+
+@media screen and (max-width: 570px) {
+  /* here is nav section */
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  nav ul {
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+  }
+  /* finished nav section */
+
+  /* here is banner section */
+
+  .banner-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .banner-container > div {
+    width: 100%;
+  }
+
+  .banner-description-container {
+    margin: 40px 0;
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .banner-description {
+    padding: 0 5px;
+  }
+
+
+  .banner-image-container img {
+    width: 322px;
+  }
+
+  .banner-image-container {
+    background-size: 350px;
+    background-position: 50px;
+    min-height: 410px;
+  }
+
+  /* finished banner section */
+
 }
