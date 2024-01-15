@@ -150,11 +150,9 @@ text-align: center;
   border-radius: 5px;
 background: #FFF;
 box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+padding: 14px 17px;
 }
 
-.card {
-  padding: 14px 17px;
-}
 
 .card-title{
   color: var(--secondary-text-color-gray);
@@ -189,7 +187,58 @@ padding-bottom: 15px;
 
 .card-image img{
   width: 15px;
+  margin: auto;
 }
+
+.arrow{
+  color:var(--primary-button-color);
+font-size: 16px;
+font-weight: 700;
+float: right;
+margin-right: 230px;
+margin-bottom: 120px;
+}
+
+/* finished card button */
+
+/* here is feature section */
+
+.feature-section-container {
+  display: flex;
+  align-items: center;
+  clear: both;
+  gap: 120px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-title{
+  color: var(--dark-color1);
+font-size: 38px;
+font-weight: 700;
+line-height: 60px;
+}
+
+.feature-description{
+
+  color: var(--secondary-text-color-gray);
+  font-weight: 700;
+  line-height: 28px; 
+  margin: 16px 155px 15px 0;
+}
+
+.feature-btn ,#feature-arrow{
+  color: #FFF;
+font-size: 16px;
+font-weight: 700;
+background: var(--primary-button-color);
+border: 0;
+padding: 5px 7px;
+}
+
+/* finished feature section */
+
+
 
 /* responsive media query for small devices */
 
@@ -260,9 +309,29 @@ padding-bottom: 15px;
 
   /* here is main section */
 
+
+  /* here is card section */
   .card-section-container{
     grid-template-columns: 1fr;
       margin: 14px 75px;
   }
 
+  .arrow{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* finished card section */
+
+  /* here is feature section */
+
+  .feature-section-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .feature-description{
+    margin: 15px;
+  }
+
+  /* finishes feature section */
 }
