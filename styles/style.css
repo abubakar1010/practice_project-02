@@ -26,7 +26,6 @@
 header {
   max-width: 1350px;
   margin: 50px auto 0;
-  background-image: url("../assets/images/Circle\ design.svg");
 }
 
 /* here is navigation section */
@@ -114,6 +113,18 @@ nav ul li a {
 
 /* finished banner section */
 
+/* here is sponsor section */
+
+.sponsor-section-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  margin: 100px 80px;
+}
+
+/* finished sponsor section */
+
 
 /* responsive media query for small devices */
 
@@ -169,5 +180,19 @@ nav ul li a {
   }
 
   /* finished banner section */
+
+  /* here is sponsor section */
+
+  .sponsor-section-container {
+    margin: 61px 20px;
+    flex-wrap: wrap;
+  }
+
+  /* finished sponsor section */
+
+  /* finished header section */
+  
+
+  /* here is main section */
 
 }
